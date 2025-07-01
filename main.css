@@ -149,6 +149,17 @@ a {
     z-index: 20;
 }
 
+.logo-fixa {
+    position: absolute;
+    left: 130px;
+    width: 625px;
+    height: 400px;
+    background-image: url(./img/logobanda2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(-20px);
+}
+
 .section:hover .img-integrantes {
     opacity: 1;
     transform: translateY(-20px); /* Move para cima e aumenta um pouco */
