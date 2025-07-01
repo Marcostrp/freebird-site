@@ -21,7 +21,7 @@ body {
     width: 50%;
     height: 200px;
     margin-top: 200px;
-    background-image: url(../animation/img/freebird.png);
+    background-image: url(./img/freebird.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -107,7 +107,7 @@ body {
 }
 
 .img-section1 {
-    background-image: url(../animation/img/banda.jpg);
+    background-image: url(./img/banda.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 600px;
@@ -119,7 +119,7 @@ body {
 
 .section:hover .img-section1 {
     opacity: 1;
-    background-image: url(../animation/img/banda.jpg);
+    background-image: url(./img/banda.jpg);
     transform: translateY(-20px); /* Move para cima e aumenta um pouco */
 }
 
