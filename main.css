@@ -24,8 +24,13 @@ body {
     background-image: url(./img/freebird.png);
     background-size: cover;
     background-repeat: no-repeat;
+    transition: .5s ease-in-out;
 }
 
+
+.logo:hover {
+    transform: scale(1.1);
+}
 .subtitle {
     font-size: 2rem;
     margin-top: 30px;
