@@ -3,10 +3,28 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    
 }
 
 body {
-    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./img/3083866.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    opacity: 0.2; /* ajuste aqui a opacidade desejada */
+    pointer-events: none;
+    z-index: -1;
 }
 
 html {
@@ -67,6 +85,7 @@ a {
     width: 150px;
     height: 100%;
     transition: 0.3s;
+    
 }
 
 .sectionlink:hover {
@@ -95,7 +114,7 @@ a {
 
 
 .site1 {
-    background-color: rgb(204, 204, 204);
+    background-color: rgba(204, 204, 204, 0.67);
     transition: .4s;
 }
 
@@ -107,7 +126,7 @@ a {
 
 
 .site3 {
-    background-color: rgb(86, 168, 4);
+    background-color: rgba(86, 168, 4, 0.538);
     transition: .4s;
 }
 
@@ -178,12 +197,12 @@ a {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    color: rgb(201, 201, 201);
+    color: rgba(201, 201, 201, 0.442);
     transition: 1s;
 }
 
 .site1:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
 .site1:hover .band-container {
