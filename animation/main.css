@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.top {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 50%;
+    height: 200px;
+    margin-top: 200px;
+    background-image: url(../animation/img/freebird.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.subtitle {
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.menu {
+    width: 100%;
+    height: 70px;
+    color: #d2d2d2;
+    background-image: linear-gradient(51deg,rgba(0, 0, 0, 1) 0%, rgb(36, 36, 36) 27%, rgb(44, 44, 44) 37%, rgb(49, 49, 49) 52%, rgb(42, 42, 42) 69%, rgba(26, 26, 26, 1) 100%);
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2px;
+    z-index: 1000;
+    text-transform: uppercase;
+}
+
+.sectionlink {
+    background-color: rgba(0, 0, 0, 0.24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.sectionlink:hover {
+    background-color: rgba(0, 0, 0, 1);
+    height: 110%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 2px;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    cursor: pointer;
+    gap: 40px;
+}
+
+
+
+.site1 {
+    background-color: rgb(204, 204, 204);
+    transition: .4s;
+}
+
+.site2 {
+    background-color: rgb(255, 255, 255);
+    transition: .4s;
+}
+
+
+
+.site3 {
+    background-color: rgb(86, 168, 4);
+    transition: .4s;
+}
+
+
+.site3:hover {
+    background-color: rgb(175, 220, 130);
+}
+
+.section-img1 {
+    border-radius: 50px;
+}
+
+.img-section1 {
+    background-image: url(../animation/img/banda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+    opacity: 0;
+    transform: translateY(120px);
+    transition: transform 1s, opacity 1s;
+}
+
+.section:hover .img-section1 {
+    opacity: 1;
+    background-image: url(../animation/img/banda.jpg);
+    transform: translateY(-20px); /* Move para cima e aumenta um pouco */
+}
+
+.img-integrantes {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: #ffffff 10px solid;
+    width: 650px;
+    height: 420px;
+    opacity: 0;
+    transform: translateY(120px);
+    transition: transform 1s, opacity 1s;
+    z-index: 20;
+}
+
+.section:hover .img-integrantes {
+    opacity: 1;
+    transform: translateY(-20px); /* Move para cima e aumenta um pouco */
+
+}
+
+.band-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    color: rgb(98, 98, 98);
+    transition: 1s;
+}
+
+.band-container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: rgb(201, 201, 201);
+    transition: 1s;
+}
+
+.site1:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.site1:hover .band-container {
+    color: #ffffff;
+}
+
+.band-container h1 {
+    text-transform: uppercase;
+}
+
+
+.band-container p {
+    font-weight: 100;
+    width: 600px;
+}
+
+.band-container img {
+    position: absolute;
+    width: 600px;
+}
+
+
+.section-title {
+    font-size: 2.5rem;
+    color: rgb(151, 151, 151);
+    font-weight: bold;
+}
+
+
+.integrantes-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 300px;
+}
+
+.instrumental {
+    width: 250px;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    transition: .3s;
+    color: black;
+}   
+
+.individual {
+    border-bottom: rgb(138, 138, 138) 2px solid;
+    font-size: 2rem;
+    height: 40px;
+    transition: .3s;
+}
+
+.instrumental:hover {
+    background-color: rgb(77, 77, 77);
+    color: #ffffff;
+}
+
+.instrumental:hover .individual {
+    border-bottom:rgb(255, 255, 255) 2px solid;
+}
