@@ -95,11 +95,12 @@ a {
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
+        position: fixed;
     }
     .menu {
         display: none;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         left: 0;
         width: 100vw;
         background: rgba(0,0,0,0.95);
@@ -329,14 +330,12 @@ a {
 
     .menu {
         flex-direction: column;
-        height: auto;
+        height: 300px;
         gap: 0;
-        position: static;
     }
 
     .sectionlink {
         width: 100%;
-        height: 50px;
         font-size: 1rem;
     }
 
