@@ -9,6 +9,7 @@
 body {
     position: relative;
     z-index: 0;
+    width: 100vw;
 }
 
 body::before {
@@ -38,7 +39,7 @@ a {
 
 .top {
     width: 100%;
-    height: 600px;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,12 +78,44 @@ a {
     text-transform: uppercase;
 }
 
+.menu-toggle {
+    display: none;
+    border: none;
+    font-size: 2.5rem;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2000;
+    cursor: pointer;
+    background: rgba(0,0,0,0.95);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        width: 100vw;
+        background: rgba(0,0,0,0.95);
+        z-index: 1500;
+    }
+    .menu.open {
+        display: flex;
+    }
+}
+
 .sectionlink {
     background-color: rgba(0, 0, 0, 0.24);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 150px;
+    width: 10rem;
     height: 100%;
     transition: 0.3s;
     
@@ -117,9 +150,14 @@ a {
     background-color: rgba(204, 204, 204, 0.67);
     transition: .4s;
 }
-
+.site1 img {
+    width: 37%; 
+    position: absolute; 
+    right: 9rem; 
+    clip-path: inset(0 0 18px);
+}
 .site2 {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.572);
     transition: .4s;
 }
 
@@ -170,13 +208,13 @@ a {
 
 .logo-fixa {
     position: absolute;
-    left: 130px;
-    width: 625px;
-    height: 400px;
+    left: 9rem;
+    width: 42%;
+    height: 25%;
     background-image: url(./img/logobanda2.jpg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    transform: translateY(-20px);
+    transform: translateY(210px);
 }
 
 .section:hover .img-integrantes {
@@ -265,4 +303,115 @@ a {
 
 .instrumental:hover .individual {
     border-bottom:rgb(255, 255, 255) 2px solid;
+}
+/* ...existing code... */
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+    body::before {
+        background-size: cover;
+    }
+
+    .top {
+        height: 60vh;
+    }
+    .logo {
+        width: 90%;
+        height: 120px;
+        position: absolute;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+        margin-top: 330px;
+        position: absolute;
+    }
+
+    .menu {
+        flex-direction: column;
+        height: auto;
+        gap: 0;
+        position: static;
+    }
+
+    .sectionlink {
+        width: 100%;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .container {
+        margin-top: 20px;
+        gap: 1px;
+    }
+
+    .section {
+        flex-direction: column;
+        gap: 20px;
+        height: 850px;
+        min-height: 80vh;
+        padding: 20px 0;
+    }
+
+    .site1 img {
+        position: relative;
+        width: 80%;
+        right: 0;
+        margin-top: 20px;
+    }
+
+    .img-section1,
+    .img-integrantes {
+        width: 85vw;
+        max-width: 90%;
+        height: 35%;
+        min-width: unset;
+    }
+
+    .logo-fixa {
+        width: 80vw;
+        height: 50%;
+        left: 2.5rem;
+        transform: translateY(680px);
+    }
+    .band-container{
+        margin-top: 50px;
+    }
+    .band-container,
+    .band-container2 {
+        gap: 20px;
+        width: 85vw;
+        max-width: 100%;
+    }
+
+    .band-container2 {
+        align-items: center;
+    }
+
+    .band-container p {
+        width: 95vw;
+        max-width: 100%;
+        font-size: 1rem;
+    }
+
+    .integrantes-container {
+        flex-direction: row;
+        align-items: center;
+        width: 80vw;
+        height: auto;
+    }
+
+    .instrumental {
+        width: 50%;
+        height: auto;
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .individual {
+        align-items: center;
+        width: 30%;
+        font-size: 1.2rem;
+        height: auto;
+    }
 }
