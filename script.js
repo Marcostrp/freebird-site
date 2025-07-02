@@ -23,7 +23,15 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const toggle = document.querySelector('.menu-toggle');
     const menu = document.querySelector('.menu');
+    const links = document.querySelectorAll('.menu .sectionlink');
+
     toggle.addEventListener('click', function() {
         menu.classList.toggle('open');
+    });
+
+    links.forEach(link => {
+        link.addEventListener('click', function() {
+            menu.classList.remove('open');
+        });
     });
 });
