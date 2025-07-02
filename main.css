@@ -314,7 +314,7 @@ a {
     }
 
     .top {
-        height: 60vh;
+        height: 70vh;
     }
     .logo {
         width: 90%;
@@ -363,7 +363,7 @@ a {
         position: absolute;
         width: 80%;
         height: 250px;
-        top: 1180px;
+        top: 1280px;
         z-index: 22;
     }
 
@@ -382,8 +382,8 @@ a {
     }  
 
     .logo-fixa {
-        width: 100vw;
-        height: 230px;
+        width: 360px;
+        height: 220px;
         left: 2.5rem;
         transform: translateY(-230px);
     }
