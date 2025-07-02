@@ -350,11 +350,7 @@ a {
         height: 850px;
         min-height: 80vh;
         padding: 20px 0;
-    }
-    .section:hover .img-integrantes {
-        opacity: 1;
-        transform: translateY(-70px); /* Move para cima e aumenta um pouco */
-    }   
+    } 
 
     .site1 img {
         position: relative;
@@ -365,8 +361,8 @@ a {
 
     .img-section1 {
         position: absolute;
-        width: 90%;
-        height: 6.5%;
+        width: 80%;
+        height: 250px;
         top: 1180px;
         z-index: 22;
     }
@@ -379,6 +375,11 @@ a {
         background-position: center;
         display: block;
     }
+
+    .section:hover .img-integrantes {
+        opacity: 1;
+        transform: translateY(-70px); /* Move para cima e aumenta um pouco */
+    }  
 
     .logo-fixa {
         width: 100vw;
