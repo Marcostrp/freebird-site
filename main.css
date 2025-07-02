@@ -182,8 +182,8 @@ a {
     background-image: url(./img/banda.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 600px;
-    height: 400px;
+    width: 45%;
+    height: 60%;
     opacity: 0;
     transform: translateY(120px);
     transition: transform 1s, opacity 1s;
@@ -351,6 +351,10 @@ a {
         min-height: 80vh;
         padding: 20px 0;
     }
+    .section:hover .img-integrantes {
+        opacity: 1;
+        transform: translateY(-70px); /* Move para cima e aumenta um pouco */
+    }   
 
     .site1 img {
         position: relative;
@@ -359,20 +363,30 @@ a {
         margin-top: 20px;
     }
 
-    .img-section1,
+    .img-section1 {
+        position: absolute;
+        width: 90%;
+        height: 6.5%;
+        top: 1180px;
+        z-index: 22;
+    }
+
+
     .img-integrantes {
-        width: 85vw;
-        max-width: 90%;
-        height: 35%;
-        min-width: unset;
+        width: 90vw;
+        height: 240px; /* ou ajuste conforme necessário */
+        background-size: cover;
+        background-position: center;
+        display: block;
     }
 
     .logo-fixa {
-        width: 80vw;
-        height: 50%;
+        width: 100vw;
+        height: 230px;
         left: 2.5rem;
-        transform: translateY(680px);
+        transform: translateY(-230px);
     }
+
     .band-container{
         margin-top: 50px;
     }
